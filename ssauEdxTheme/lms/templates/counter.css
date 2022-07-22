@@ -1,0 +1,38 @@
+.counter{
+        background: url('https://do.ssau.ru/img/cosmo.jpg'); 
+        /* background-position: 50% 85%;  */
+        /*background-color:white;*/ 
+        border:0px solid #009cde;
+        background-attachment: fixed;
+    }
+
+    .counter .ctr-left{
+        border-right:2px solid rgb(250,250,250); 
+        padding: 2%;
+    }
+
+    .counter .ctr-right{
+        border-left:2px solid rgb(250,250,250); 
+        padding: 2%;
+    }
+
+    .counter .num{
+        display:inline-block;
+    }
+
+    .ctr-left h2, .ctr-right h2{
+        text-align:center; 
+        color: #fff; 
+        font-weight:700
+    } 
+
+    .ctr-left h4, .ctr-right h4{
+        text-align:center; 
+        color: #fff; 
+        font-weight:600
+    } 
+
+@media (max-width: 767px) {
+	.counter .ctr-left{border-right:0px solid white;}
+	.counter .ctr-right{border-left:0px solid white;}
+}
