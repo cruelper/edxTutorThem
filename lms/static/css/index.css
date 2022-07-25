@@ -1,160 +1,100 @@
-@font-face {
-    font-family: 'font';
-    src: url('../fonts/ElektraTextLight.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-body {font-family: arial; line-height: 1.4;}
-.ssau_page {
-        width: 100%;
-        /* background: rgb(250,250,250); */
-}
-
-body{
-        /* background: rgb(250,250,250) !important; */
-}
-
-.ssau_nav {
-        width: 100%;
-        margin: auto;
-        vertical-align:top;
-        }
-
-.ssau_footer a {
-        color: #fff;
-        }
-
-.ssau_footer a:visited {
-        color: #fff;
-        }
-
-.ssau_menu {
-        margin-top: 10px;
-        }
-
-.ssau_menu button {
-border: 1px solid #000;
-background: #fff;
-padding: 8px 16px;
--webkit-border-radius: 7px;
- -moz-border-radius: 7px;
- border-radius: 7px;
- color: #000;
- font-size: 15px;
- text-decoration: none;
- vertical-align: middle;
- margin-right: 15px;
- text-shadow: none;
- }
-
-.ssau_menu button:hover {
-        color: #fff;
-background: #00678e;
-}
-
-.ssau_menu button:active {
-background: #00adee;
+body {
+	line-height: 1.4;
 }
 
 .ssau_head {
-        margin: 15px 0px;
-        width: 100%;
-        height: 40vh;
-        min-height: 300px;
-        background-image: url('../images/people-1973918_960_720.png');
-        background-size: cover;
-        text-align: left;
-        vertical-align: middle;
-        /* border-radius:10px; */
-        background-image: url('../images/ssau_rocket.jpg');
-        }
+	margin: 15px 0px;
+	width: 100%;
+	height: 40vh;
+	min-height: 300px;
+	background-size: cover;
+	text-align: left;
+	vertical-align: middle;
+	background-image: url('../images/ssau_rocket.jpg');
+}
 
 .ssau_head div {
-        display: inline-block;
-        width: 50%; text-align: center;
-        font-size: 45px;
-        color: #fff;
-        font-weight: 600;
-        margin: 60px;
-        }
+	display: inline-block;
+	width: 50%; text-align: center;
+	font-size: 45px;
+	color: #fff;
+	font-weight: 600;
+	margin: 60px;
+}
 		
 		
 .white-with-shadow{
-        border-radius: 10px;
     background-color: rgb(255,255,255);
     border:none;
     box-shadow:0 0 5px rgba(122,122,122,0.3);
 }
 
 .ssau_index_1 {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        padding: 15px 0px;
-        }
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding: 15px 0px;
+}
 
 .ssau_index_1 button {
-        background: #8bc34a;
-        padding: 8px 16px;
-        -webkit-border-radius: 7px;
-        -moz-border-radius: 7px;
-        border-radius: 7px;
-        color: #000;
-        font-size: 15px;
-        text-decoration: none;
-        vertical-align: middle;
-        margin-right: 15px;
-        text-shadow: none;
-        box-shadow: none;
-        }
+	background: #8bc34a;
+	padding: 8px 16px;
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-right: 15px;
+	text-shadow: none;
+	box-shadow: none;
+}
 
 .ssau_index_1 button:hover {
-        color: #000;
-        background: #f1c9a5;
-        text-shadow: none;
-        box-shadow: none;
-        }
+	color: #000;
+	background: #f1c9a5;
+	text-shadow: none;
+	box-shadow: none;
+}
 
 .ssau_index_2 {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        padding: 35px 0px;
-        }
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding: 35px 0px;
+}
 
 .ssau_index_2 img {
-        width: 50%;
-        }
+	width: 50%;
+}
 
 .ssau_index_3 .logo {
-        display: inline-block;
-        width: 25%;
-        text-align: center;
-        padding: 15px 0px;
-        vertical-align: top;
-        opacity: 0.5;
-        }
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	padding: 15px 0px;
+	vertical-align: top;
+	opacity: 0.5;
+}
 
 .ssau_index_3 .text {
-        display: inline-block;
-        width: 70%;
-        text-align: center;
-        vertical-align: top;
-        padding-top: 30px;
-        font-size: 32px;
-        color: #fff;
-        }
+	display: inline-block;
+	width: 70%;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 30px;
+	font-size: 32px;
+	color: #fff;
+}
 
 .ssau_footer {
-        width: 100%;
-        text-align: center;
-        color: #fff;
-        background-color: #7a7a7a;
-        }
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: #7a7a7a;
+}
 
 .ssau_head_logo {
-        vertical-align: top;
-        }
+	vertical-align: top;
+}
 
 @media screen and (min-width: 800px) {
 .ssau_head_logo {display: inline-block; width: 40%; padding-top: 10px;}
@@ -179,474 +119,445 @@ background: #00adee;
 }
 
 .online-edu-course-replies{
-        width:100%;
-        height:500px;
-        border:0;
+	width:100%;
+	height:500px;
+	border:0;
 }
 
 .content-wrapper, .window-wrap{
-        /*padding:0 !important;*/
-        background: rgb(250,250,250);
+	background: rgb(250,250,250);
 }
 
 .courses-container .course {
-        border-radius:10px !important;
-        overflow:hidden;
-        border: 1px solid #ddd !important;
+	overflow:hidden;
+	border: 1px solid #ddd !important;
 }
 
 .hightlighted-courses{
-        width: auto !important;
-        max-width:1600px !important;
+	width: auto !important;
+	max-width:1600px !important;
 }
 
 .courses-container .courses{
-        max-width: 98%;
-        margin: auto;
-        float:none;
+	max-width: 98%;
+	margin: auto;
+	float:none;
 }
 
 .courses-container .courses .course .course-image .cover-image{
-        height:auto;
-        max-height:222px;
-        max-height:222px;
+	height:auto;
+	max-height:222px;
+	max-height:222px;
 }
 
 .courses-container .course:hover {
-        border: 1px solid #ddd !important;
-        background:white !important;
-        box-shadow: 0 2px 15px rgba(122,122,122,0.9) !important;
-        transform: scale(1.05);
+	border: 1px solid #ddd !important;
+	background:white !important;
+	box-shadow: 0 2px 15px rgba(122,122,122,0.9) !important;
+	transform: scale(1.05);
 }
 
 .courses-container .course-title{
-        height:122px !important;
+	height:122px !important;
 }
 
 .courses-container .course-info{
-        height:200px !important;
-        transition: all 0.3s ease;
+	height:200px !important;
+	transition: all 0.3s ease;
 }
 
 .courses-container .course .course-organization{
-        display:none !important;
+	display:none !important;
 }
 
 .courses-container .course .course-code{
-        display:none !important;
+	display:none !important;
 }
 
 .course-container{
-        background:white;
-        border-radius:10px !important;
-        border: 1px solid rgba(0,0,0,0.2) !important;
+	background:white;
+	border: 1px solid rgba(0,0,0,0.2) !important;
 }
 
 .course-info .course-profile{
-        border-bottom:0 !important;
-        background: rgb(250,250,250) !important;
-        box-shadow:inset 0 0 0 0 #fff !important;
-        height:auto !important;
-        padding-top:0px !important;
+	border-bottom:0 !important;
+	background: rgb(250,250,250) !important;
+	box-shadow:inset 0 0 0 0 #fff !important;
+	height:auto !important;
+	padding-top:0px !important;
 }
 
 .find-courses{
-        background: transparent !important;
-        padding-bottom: 60px;
+	background: transparent !important;
+	padding-bottom: 60px;
 }
 
 .find-courses .courses-container{
-        padding-top:0px;
+	padding-top:0px;
 }
 
 .find-courses .courses{
-        padding-top:0px;
+	padding-top:0px;
 }
 
 .content-wrapper{
-        max-width:1600px !important;
-        margin-left:auto;
-        margin-right:auto;
+	max-width:1600px !important;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .course-info .course-profile .intro-inner-wrapper{
-        border-radius: 10px !important;
     background-color: rgb(255,255,255) !important;
     border:none !important;
     box-shadow:0 2px 4px rgba(122,122,122,0.3) !important;
-        margin-bottom: 20px !important;
-        overflow: hidden !important;
-        padding:0px !important;
-        max-width:1200px !important;
+	margin-bottom: 20px !important;
+	overflow: hidden !important;
+	padding:0px !important;
+	max-width:1200px !important;
 }
 
 .course-info .course-profile .intro-inner-wrapper .main-cta a span{
-        width:60% !important;
+	width:60% !important;
 }
 
 .course-info .container .details{
-        max-width:60%;
+	max-width:60%;
 }
 
 .course-info .container .course-sidebar{
-        width:37.3%;
+	width:37.3%;
 }
 
 .course-info .container {
-        border-radius: 10px;
-    background-color: rgb(255,255,255);
-    border:none;
-    box-shadow:0 0 5px rgba(122,122,122,0.3);
-        margin-bottom: 20px;
-        overflow: hidden;
-        padding:20px;
-        max-width:1200px;
+	background-color: rgb(255,255,255);
+	border:none;
+	box-shadow:0 0 5px rgba(122,122,122,0.3);
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding:20px;
+	max-width:1200px;
 }
 
 .course-info .details .course-staff .teacher-image img{
-        /*border-radius:50%;*/
-        object-fit:cover;
+	object-fit:cover;
 }
 
 .course-info .details .course-staff .teacher-image{
-        border:none !important;
-        border-radius:50%;
-        padding:0 !important;
-}
-
-.courses-container .courses{
-        /*padding:0 !important;*/
+	border:none !important;
+	border-radius:50%;
+	padding:0 !important;
 }
 
 .ssau_head{
-        /*border-radius:10px;*/
-        background-position: 50% 10%;
-        background-attachment: fixed;
-        margin: 0;
-        min-height:250px;
-        height:30vh;
-        -webkit-background-size: cover;
-        background-size:cover;
-        background-repeat: no-repeat;
+	background-position: 50% 10%;
+	background-attachment: fixed;
+	margin: 0;
+	min-height:250px;
+	height:30vh;
+	-webkit-background-size: cover;
+	background-size:cover;
+	background-repeat: no-repeat;
 
-
-        -webkit-background-position: 50% 10%;
-        -webkit-background-attachment: fixed;
-        -webkit-margin: 0;
-        -webkit-min-height:250px;
-        -webkit-height:30vh;
+	-webkit-background-position: 50% 10%;
+	-webkit-background-attachment: fixed;
+	-webkit-margin: 0;
+	-webkit-min-height:250px;
+	-webkit-height:30vh;
 }
 
 .white-with-shadow{
-        width:98%;
-        margin-left:auto;
-        margin-right:auto;
-        border-radius: 10px;
-    background-color: rgb(255,255,255);
-    border:none;
-    box-shadow:0 0 5px rgba(122,122,122,0.3);
-        margin-bottom: 20px;
-        overflow: hidden;
+	width:98%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: rgb(255,255,255);
+	border:none;
+	box-shadow:0 0 5px rgba(122,122,122,0.3);
+	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 
 .ssau_page{
-        background: rgb(250,250,250);
+	background: rgb(250,250,250);
 }
 
 .highlighted-courses{
-        margin-bottom:0;
+	margin-bottom:0;
 }
 
 .section-bkg-wrapper{
-        background: rgb(255,255,255)
+	background: rgb(255,255,255)
 }
 
 .white-with-shadow button, .course-info .intro-inner-wrapper .intro a, .course-info .intro-inner-wrapper .intro strong{
-        background: #009CDE ;
-        background-color: #009CDE !important;
-        background-image:none !important;
-        color: white ;
-        font-weight: 500 ;
-        border: 0 ;
-        border: 1px solid #fff !important;
-        margin-top:15px ;
-        font-size: 13pt;
-        text-shadow:none !important;
-        box-shadow:0 0 0 0 #fff !important;
-        transition: all 0.3s ease;
+	background: #009CDE ;
+	background-color: #009CDE !important;
+	background-image:none !important;
+	color: white ;
+	font-weight: 500 ;
+	border: 0 ;
+	border: 1px solid #fff !important;
+	margin-top:15px ;
+	font-size: 13pt;
+	text-shadow:none !important;
+	box-shadow:0 0 0 0 #fff !important;
+	transition: all 0.3s ease;
 }
 
  .course-info .intro-inner-wrapper .intro .heading-group button{
-        display:none;
+	display:none;
  }
 
  .course-info .intro-inner-wrapper .intro strong{
-        margin-top:0;
-        border-radius:7px !important;
+	margin-top:0;
  }
 
 button:active:not(:disabled), button:focus:not(:disabled),{
-        box-shadow:inset 0 0 0 0 #fff !important;
+	box-shadow:inset 0 0 0 0 #fff !important;
 }
 
 .ssau_nav{
-        height:auto;
-        min-height: 65px;
+	height:auto;
+	min-height: 65px;
 }
 
 .courses .courses-listing-item{
-        max-height: 480px !important;
+	max-height: 480px !important;
 }
 
 @media (max-width:767px){
         .header-logo .logo{
-                max-width:130%;
-                height:auto !important;
+			max-width:130%;
+			height:auto !important;
         }
 		
-.ssau_head{
-                background-size: auto !important;
-                -webkit-background-size: auto !important;
+		.ssau_head{
+			background-size: auto !important;
+			-webkit-background-size: auto !important;
         }
 
         .ssau_nav .ssau_menu{
-                margin-left:auto;
-                margin-right: auto;
-                min-width: 300px;
+			margin-left:auto;
+			margin-right: auto;
+			min-width: 300px;
         }
 
         .ssau_menu button{
-                margin-left:10px;
-                margin-right:10px;
+			margin-left:10px;
+			margin-right:10px;
         }
 
         .courses-container{
-                width:auto;
-                max-width:90%;
+			width:auto;
+			max-width:90%;
         }
 
         .courses-container .course .cover-image{
-                height: auto !important;
+			height: auto !important;
         }
 
         .courses-container .courses-listing-item{
-                max-height:none !important;
+			max-height:none !important;
         }
 
         .courses-container .course .cover-image::before{
-                display:none;
+			display:none;
         }
 
         .course-info .intro-inner-wrapper{
-                min-width:100% !important;
-                max-width:100% !important ;
+			min-width:100% !important;
+			max-width:100% !important ;
         }
 
         .course-info .container .details{
-                min-width:100% !important;
-                max-width:100% !important;
+			min-width:100% !important;
+			max-width:100% !important;
         }
 		
-.course-info .container{
-                min-width:100% !important;
-                max-width:100% !important;
+		.course-info .container{
+			min-width:100% !important;
+			max-width:100% !important;
         }
 
         .course-info .intro-inner-wrapper .intro{
-                display: block !important;
-                max-width:90%;
-                margin-left: auto;
-                margin-right: auto;
-                width:auto !important;
+			display: block !important;
+			max-width:90%;
+			margin-left: auto;
+			margin-right: auto;
+			width:auto !important;
         }
 
         .course-info .intro-inner-wrapper .intro .register{
-                width:100% !important;
+			width:100% !important;
         }
 
         .course-info .intro-inner-wrapper .intro .disabled{
-                width:60% !important;
+			width:60% !important;
         }
 
         .ssau_menu ol, .ssau_menu .doc-link {
-                float:none !important;
+			float:none !important;
         }
 
         .ssau_menu .user {
-                float:none !important;
-                padding:0 0 10px 0;
+			float:none !important;
+			padding:0 0 10px 0;
         }
 
 
         .course-info .intro-inner-wrapper .media{
-                display: block !important;
-                max-width:90%;
-                margin-left: auto;
-                margin-right: auto;
-                width: auto  !important;
+			display: block !important;
+			max-width:90%;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto  !important;
         }
 		
- .course-info .container .details{
-                max-width:60% !important;
+		.course-info .container .details{
+			max-width:60% !important;
         }
 
         .course-info .container .course-sidebar{
-                display:none !important;
+			display:none !important;
         }
 }
 
 .global-header{
-        border-bottom: 1px solid #009cde !important;
+	border-bottom: 1px solid #009cde !important;
 }
 
 .global-header .nav-links .secondary .nav-item{
-        padding: 5px 0 0 !important;
-        margin-right:0 !important;
-        margin-left: 20px !important;
+	padding: 5px 0 0 !important;
+	margin-right:0 !important;
+	margin-left: 20px !important;
 }
 
 .nav-item .register-btn, .nav-item .sign-in-btn{
-        background: #009CDE !important;
-        color: white !important;
-        font-weight: 500 !important;
-        border: 1px solid #009CDE !important;
-        font-size: 13pt !important;
-        transition: all 0.3s ease !important;
-        text-transform: uppercase !important;
+	background: #009CDE !important;
+	color: white !important;
+	font-weight: 500 !important;
+	border: 1px solid #009CDE !important;
+	font-size: 13pt !important;
+	transition: all 0.3s ease !important;
+	text-transform: uppercase !important;
 }
 
 .ssau_index_1 button{
-        background: #009CDE !important;
-        color: white !important;
-        font-weight: 500 !important;
-        border: 1px solid #009CDE !important;
-        font-size: 13pt !important;
-        transition: all 0.3s ease !important;
-        text-transform: uppercase !important;
+	background: #009CDE !important;
+	color: white !important;
+	font-weight: 500 !important;
+	border: 1px solid #009CDE !important;
+	font-size: 13pt !important;
+	transition: all 0.3s ease !important;
+	text-transform: uppercase !important;
 }
 
 .courses-container .courses .course .course-image .cover-image::before{
-        display:none;
+	display:none;
 }
 
 .courses-container .courses .course .course-image .cover-image .learn-more{
-        display:none;
+	display:none;
 }
 
 .ssau_index_1 button:hover{
-        background: white !important;
-        color: #009CDE !important;
-        font-weight: 500 !important;
-        border: 1px solid #009CDE !important;
-        font-size: 13pt !important;
-        transition: all 0.3s ease !important;
+	background: white !important;
+	color: #009CDE !important;
+	font-weight: 500 !important;
+	border: 1px solid #009CDE !important;
+	font-size: 13pt !important;
+	transition: all 0.3s ease !important;
 }
 
 .nav-item .register-btn:hover, .nav-item .sign-in-btn:hover{
-        background: white !important;
-        color: #009CDE !important;
-        font-weight: 500 !important;
-        border: 1px solid #009CDE !important;
-        font-size: 13pt !important;
-        transition: all 0.3s ease !important;
+	background: white !important;
+	color: #009CDE !important;
+	font-weight: 500 !important;
+	border: 1px solid #009CDE !important;
+	font-size: 13pt !important;
+	transition: all 0.3s ease !important;
 }
 
 .ssau_nav .ssau_menu{
-        width:56.6%;
+	width:56.6%;
 }
 
 .ssau_nav .ssau_head_logo{
-        padding-left:2%;
+	padding-left:2%;
 }
 
 .white-with-shadow button:hover, .course-info .intro-inner-wrapper .intro a:hover{
-        background: #fff ;
-        background-color: #fff !important;
-        color: #009CDE !important;
-        font-weight: 500 ;
-        border: 1px solid #009CDE !important;
+	background: #fff ;
+	background-color: #fff !important;
+	color: #009CDE !important;
+	font-weight: 500 ;
+	border: 1px solid #009CDE !important;
 }
 
 .header-global{
-        min-height:65px;
+	min-height:65px;
 }
 
 .ssau_nav button:hover{
-        background: #fff ;
-        color: #009CDE ;
-        font-weight: 500 ;
-        border: 1px solid #009CDE ;
+	background: #fff ;
+	color: #009CDE ;
+	font-weight: 500 ;
+	border: 1px solid #009CDE ;
 }
 
 .ssau_nav button:active:not(:disabled), .ssau_nav button:focus:not(:disabled){
-        box-shadow:inset 0 0 0 0 #fff;
+	box-shadow:inset 0 0 0 0 #fff;
 }
 
 .white-with-shadow .ssau_index_2 p{
-        font-size:13pt;
-        margin-top:10px;
+	font-size:13pt;
+	margin-top:10px;
 }
 
 .white-with-shadow p{
-        font-size: 18pt;
-        text-align: center;
-        margin-bottom: 10px;
-}
-
-.ssau_footer{
-        background-color: rgb(240,240,240);
-        color:black !important;
-        /*box-shadow: 0 -3px 6px rgba(122,122,122,0.2) !important;
-        border-top: 1px solid rgb(230,230,230);*/
+	font-size: 18pt;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 .ssau_index_3{
-        background-position: 50% 10%;
-        background-attachment: fixed;
-        margin: 0;
-        margin-bottom: 10px;
-}
-
-.ssau_footer a{
-        color: #000 !important;
-        text-decoration: underline !important;
+	background-position: 50% 10%;
+	background-attachment: fixed;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .ssau_index_2_test{
-        width:90%;
-        margin-left:auto;
-        margin-right:auto;
-        padding:20px;
-        display:table;
-        /*cellspacing:10px;*/
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px;
+	display:table;
 }
 
 .ssau_index_2_test .row{
-        width:100%;
-        height:100%;
-        display:table-row;
+	width:100%;
+	height:100%;
+	display:table-row;
 }
 
 .ssau_index_2_test .row .cell{
-        width:49%;
-        height:100%;
-        display:table-cell;
-        /*margin-bottom:10px;*/
+	width:49%;
+	height:100%;
+	display:table-cell;
 }
 
 .ssau_index_2_test .cell img{
-        display:table-cell;
-        width:70%;
-        height:auto;
+	display:table-cell;
+	width:70%;
+	height:auto;
 }
 
 .ssau_index_2_test .cell p{
-        display:table-cell;
-        width:80%;
-        height:100%;
-        font-size:13pt;
-        text-align:left;
-        /*margin-left:30px;*/
-        vertical-align:middle;
+	display:table-cell;
+	width:80%;
+	height:100%;
+	font-size:13pt;
+	text-align:left;
+	vertical-align:middle;
 }
