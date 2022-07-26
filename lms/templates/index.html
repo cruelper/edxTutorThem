@@ -12,8 +12,7 @@ from openedx.core.djangolib.markup import HTML, Text
 <link href="${static.url('css/index.css')}" rel="stylesheet" type="text/css" />
 <link href="${static.url('css/bootstrap.css')}" rel="stylesheet" type="text/css" />
 <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
-
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <div class="white-with-shadow">
 	<div class="ssau_head "></div>
@@ -76,11 +75,25 @@ from openedx.core.djangolib.markup import HTML, Text
 	
 <script>
 	jQuery(document).ready(function($) {
-		const el = document.querySelector('.counter');
-		counterUp( el, {
-			duration: 1000,
-			delay: 10,
-		});
+		var func = function(){
+			const counterUp = window.counterUp.default
+			const num1 = document.querySelector('.num1')
+			const num2 = document.querySelector('.num2')
+
+			counterUp( num1, {
+				duration: 1000,
+				delay: 10,
+			})
+			counterUp( num2, {
+				duration: 1000,
+				delay: 10,
+			})
+		}
+		
+        func();
+        setInterval(function(){
+			func();
+		}, 8000);
 	});
 </script>
 	 
