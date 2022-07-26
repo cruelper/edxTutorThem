@@ -11,9 +11,7 @@ from openedx.core.djangolib.markup import HTML, Text
 <link href="${static.url('css/counter.css')}" rel="stylesheet" type="text/css" />
 <link href="${static.url('css/index.css')}" rel="stylesheet" type="text/css" />
 <link href="${static.url('css/bootstrap.css')}" rel="stylesheet" type="text/css" />
-<script src="${static.url('js/jquery.counterup.js')}"></script>
-<script src="${static.url('js/waypoints.min.js')}"></script>
-<script src="${static.url('js/jquery-migrate-3.0.0.min.js')}"></script>
+<script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
 
 
 
@@ -78,23 +76,11 @@ from openedx.core.djangolib.markup import HTML, Text
 	
 <script>
 	jQuery(document).ready(function($) {
-		var func = function(){
-			$('.num1').counterUp({
-				delay: 10,
-				time: 1000
-            });
-			$('.num2').counterUp({
-				delay: 10,
-				time: 1000
-			});
-		}
-		
-        func();
-        setInterval(function(){
-			$(".num1").text('170000');
-			$(".num2").text('4500');
-			func();
-		}, 10000);
+		const el = document.querySelector('.counter');
+		counterUp( el, {
+			duration: 1000,
+			delay: 10,
+		});
 	});
 </script>
 	 
