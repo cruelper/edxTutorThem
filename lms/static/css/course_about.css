@@ -16,7 +16,7 @@
     z-index: 2;
 }
 
-.sbtn strong{
+.sbtn, strong{
     background: #009CDE !important;
     color: white !important;
     font-weight: 500 !important;
@@ -29,7 +29,7 @@
 	box-shadow: 0 !important;
 }
 
-.sbtn:hover strong:hover{
+.sbtn:hover, strong:hover{
     background: white !important;
     color: #009CDE !important;
     font-weight: 500 !important;

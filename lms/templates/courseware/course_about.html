@@ -74,9 +74,7 @@ from six import string_types
           <span>${course.display_org_with_default}</span>
         </div>
 		
-		      <div class="course-summary">
-
-        <%block name="course_about_important_dates">
+		<div class="course-summary">
         <ol class="important-dates">
           % if not course.start_date_is_still_default:
               <%
@@ -151,7 +149,6 @@ from six import string_types
             <li class="important-dates-item"><span class="icon fa fa-book" aria-hidden="true"></span><p class="important-dates-item-title">${_("Requirements")}</p><span class="important-dates-item-text prerequisites">${get_course_about_section(request, course, "prerequisites")}</span></li>
           % endif
         </ol>
-        </%block>
     </div>
 
         <div class="main-cta">
