@@ -57,6 +57,8 @@ from six import string_types
 
 <%block name="pagetitle">${course.display_name_with_default}</%block>
 
+<link href="${static.url('css/course_about.css')}" rel="stylesheet" type="text/css" />
+
 <section class="course-info">
 
   <%block name="course_about_header">
@@ -159,11 +161,8 @@ from six import string_types
     <div class="course-sidebar">
       <div class="course-summary">
 
-        <%include file="course_about_sidebar_header.html" />
-
         <%block name="course_about_important_dates">
         <ol class="important-dates">
-          <li class="important-dates-item"><span class="icon fa fa-info-circle" aria-hidden="true"></span><p class="important-dates-item-title">${_("Course Number")}</p><span class="important-dates-item-text course-number">${course.display_number_with_default}</span></li>
           % if not course.start_date_is_still_default:
               <%
                   course_start_date = course.advertised_start or course.start
