@@ -59,12 +59,10 @@ from six import string_types
 
 <section class="course-info">
 
-<link href="${static.url('css/course_about.css')}" rel="stylesheet" type="text/css" />
-
   <%block name="course_about_header">
   <header class="course-profile">
     <div class="intro-inner-wrapper">
-      <div class="table" style="max-width:1180px; margin-left: auto; margin-right: auto;">
+      <div class="table">
       <section class="intro">
         <div class="heading-group">
           <h1>
@@ -73,12 +71,99 @@ from six import string_types
           <br />
           <span>${course.display_org_with_default}</span>
         </div>
-		
-		    <div class="course-sidebar">
+
+        <div class="main-cta">
+        %if user.is_authenticated and registered:
+          %if show_courseware_link:
+            <a href="${course_target}">
+          %endif
+
+          <span class="register disabled">${_("You are enrolled in this course")}</span>
+
+          %if show_courseware_link:
+            <strong>${_("View Course")}</strong>
+            </a>
+          %endif
+
+        % elif is_course_full:
+          <span class="register disabled">
+            ${_("Course is full")}
+          </span>
+        % elif invitation_only and not can_enroll:
+          <span class="register disabled">${_("Enrollment in this course is by invitation only")}</span>
+        ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
+        ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
+        ## so that they can register and become a real user that can enroll.
+        % elif not is_shib_course and not can_enroll:
+          <span class="register disabled">${_("Enrollment is Closed")}</span>
+        %elif allow_anonymous:
+          %if show_courseware_link:
+            <a href="${course_target}">
+            <strong>${_("View Course")}</strong>
+            </a>
+          %endif
+        %else:
+          <%
+            if ecommerce_checkout:
+              reg_href = ecommerce_checkout_link
+            else:
+              reg_href="#"
+            if single_paid_mode:
+              href_class = "add-to-cart"
+            else:
+              href_class = "register"
+          %>
+          <a href="${reg_href}" class="${href_class}">
+            ${_("Enroll Now")}
+          </a>
+          <div id="register_error"></div>
+        %endif
+        </div>
+
+      </section>
+      % if get_course_about_section(request, course, "video"):
+      <a href="#video-modal" class="media" rel="leanModal">
+        <div class="hero">
+          <img src="${course_image_urls['large']}" alt="" />
+          <div class="play-intro"></div>
+        </div>
+      </a>
+      %else:
+      <div class="media">
+        <div class="hero">
+          <img src="${course_image_urls['large']}" alt="" />
+        </div>
+      </div>
+      % endif
+    </div>
+      </div>
+  </header>
+  </%block>
+
+  <div class="container">
+
+    <%block name="course_about_details">
+    <div class="details">
+      % if staff_access and studio_url is not None:
+        <div class="wrap-instructor-info studio-view">
+          <a class="instructor-info-action" href="${studio_url}">${_("View About Page in studio")}</a>
+        </div>
+      % endif
+
+      <div class="inner-wrapper">
+        ${clean_dangerous_html(get_course_about_section(request, course, "overview"))}
+      </div>
+    </div>
+    </%block>
+
+    <div class="course-sidebar">
       <div class="course-summary">
+
+        <%include file="course_about_sidebar_header.html" />
 
         <%block name="course_about_important_dates">
         <ol class="important-dates">
+          <li class="important-dates-item"><span class="icon fa fa-info-circle" aria-hidden="true"></span><p class="important-dates-item-title">${_("Course Number")}</p><span class="important-dates-item-text course-number">${course.display_number_with_default}</span></li>
           % if not course.start_date_is_still_default:
               <%
                   course_start_date = course.advertised_start or course.start
@@ -168,90 +253,6 @@ from six import string_types
              ${get_course_about_section(request, course, "ocw_links")}
         </div>
     </div>
-
-        <div class="main-cta">
-        %if user.is_authenticated and registered:
-          %if show_courseware_link:
-            <a href="${course_target}">
-          %endif
-
-          <span class="register disabled">${_("You are enrolled in this course")}</span>
-
-          %if show_courseware_link:
-            <strong>${_("View Course")}</strong>
-            </a>
-          %endif
-
-        % elif is_course_full:
-          <span class="register disabled">
-            ${_("Course is full")}
-          </span>
-        % elif invitation_only and not can_enroll:
-          <span class="register disabled">${_("Enrollment in this course is by invitation only")}</span>
-        ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
-        ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
-        ## so that they can register and become a real user that can enroll.
-        % elif not is_shib_course and not can_enroll:
-          <span class="register disabled">${_("Enrollment is Closed")}</span>
-        %elif allow_anonymous:
-          %if show_courseware_link:
-            <a href="${course_target}">
-            <strong>${_("View Course")}</strong>
-            </a>
-          %endif
-        %else:
-          <%
-            if ecommerce_checkout:
-              reg_href = ecommerce_checkout_link
-            else:
-              reg_href="#"
-            if single_paid_mode:
-              href_class = "add-to-cart"
-            else:
-              href_class = "register"
-          %>
-          <a href="${reg_href}" class="${href_class} btn">
-            ${_("Enroll Now")}
-          </a>
-          <div id="register_error"></div>
-        %endif
-        </div>
-
-      </section>
-      % if get_course_about_section(request, course, "video"):
-      <a href="#video-modal" class="media" rel="leanModal">
-        <div class="hero">
-          <img src="${course_image_urls['large']}" alt="" />
-          <div class="play-intro"></div>
-        </div>
-      </a>
-      %else:
-      <div class="media">
-        <div class="hero">
-          <img src="${course_image_urls['large']}" alt="" />
-        </div>
-      </div>
-      % endif
-    </div>
-      </div>
-  </header>
-  </%block>
-
-  <div class="container">
-
-    <%block name="course_about_details">
-    <div class="details">
-      % if staff_access and studio_url is not None:
-        <div class="wrap-instructor-info studio-view">
-          <a class="instructor-info-action" href="${studio_url}">${_("View About Page in studio")}</a>
-        </div>
-      % endif
-
-      <div class="inner-wrapper">
-        ${clean_dangerous_html(get_course_about_section(request, course, "overview"))}
-      </div>
-    </div>
-    </%block>
       %endif
 
     % if sidebar_html_enabled:
