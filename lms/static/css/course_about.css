@@ -21,7 +21,7 @@
     color: white !important;
     font-weight: 500 !important;
     border: 1px solid #009CDE !important;
-    font-size: 13pt !important;
+    font-size: 16px !important;
     transition: all 0.3s ease !important;
     text-transform: uppercase !important;
 	border-radius: 0 !important;
@@ -34,7 +34,7 @@
     color: #009CDE !important;
     font-weight: 500 !important;
     border: 1px solid #009CDE !important;
-    font-size: 13pt !important;
+    font-size: 16px !important;
     transition: all 0.3s ease !important;
 	border-radius: 0 !important;
 	text-shadow: none !important;
@@ -54,4 +54,26 @@ strong {
 
 .important-dates {
 	padding: 0 !important;
+}
+
+.details {
+	width: 100% !important;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.instructor-info-action {
+	background-color: #009CDE !important;
+	color: white !important;
+	font-size: 16px !important;
+	border-radius: 0 !important;
+	text-decoration: none !important;
+}
+
+.instructor-info-action:hover {
+	background-color: white !important;
+	color: #009CDE !important;
+	font-size: 16px !important;
+	border-radius: 0 !important;
+	text-decoration: none !important;
 }
