@@ -16,7 +16,7 @@
     z-index: 2;
 }
 
-.sbtn {
+.sbtn strong{
     background: #009CDE !important;
     color: white !important;
     font-weight: 500 !important;
@@ -24,41 +24,26 @@
     font-size: 13pt !important;
     transition: all 0.3s ease !important;
     text-transform: uppercase !important;
+	border-radius: 0 !important;
+	text-shadow: 0 !important;
+	box-shadow: 0 !important;
 }
 
-.sbtn:hover {
+.sbtn:hover strong:hover{
     background: white !important;
     color: #009CDE !important;
     font-weight: 500 !important;
     border: 1px solid #009CDE !important;
     font-size: 13pt !important;
     transition: all 0.3s ease !important;
+	border-radius: 0 !important;
+	text-shadow: 0 !important;
+	box-shadow: 0 !important;
 }
 
 strong {
-    border: 1px solid #009CDE !important;
-    color: white !important;
     display: inline-block;
-    font-size: 13pt !important;
-    font-weight: 500 !important;
-    background: #009CDE !important;
     padding: 10px 0;
     text-align: center;
     width: 35.26334%;
-	transition: all 0.3s ease !important;
-    text-transform: uppercase !important;
-}
-
-strong:hover {
-    border: 1px solid #009CDE !important;
-    color: #009CDE !important;
-    display: inline-block;
-    font-size: 13pt !important;
-    font-weight: 500 !important;
-    background: white !important;
-    padding: 10px 0;
-    text-align: center;
-    width: 35.26334%;
-	transition: all 0.3s ease !important;
-    text-transform: uppercase !important;
 }
