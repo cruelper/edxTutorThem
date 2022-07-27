@@ -1,0 +1,17 @@
+.table {
+    display: table;
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    position: relative;
+    width: 30%;
+    z-index: 2;
+}
