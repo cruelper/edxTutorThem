@@ -25,8 +25,8 @@
     transition: all 0.3s ease !important;
     text-transform: uppercase !important;
 	border-radius: 0 !important;
-	text-shadow: 0 !important;
-	box-shadow: 0 !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
 }
 
 .sbtn:hover, strong:hover{
@@ -37,8 +37,8 @@
     font-size: 13pt !important;
     transition: all 0.3s ease !important;
 	border-radius: 0 !important;
-	text-shadow: 0 !important;
-	box-shadow: 0 !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
 }
 
 strong {
@@ -46,4 +46,12 @@ strong {
     padding: 10px 0;
     text-align: center;
     width: 35.26334%;
+}
+
+.course-sidebar {
+	width: 100% !important;
+}
+
+.important-dates {
+	padding: 0 !important;
 }
