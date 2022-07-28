@@ -60,6 +60,7 @@ strong {
 	width: 100% !important;
 	padding-left: 20px;
 	padding-right: 20px;
+	max-width: 1140px;
 }
 
 .instructor-info-action {
@@ -68,6 +69,7 @@ strong {
 	font-size: 16px !important;
 	border-radius: 0 !important;
 	text-decoration: none !important;
+	border: 1px solid #009CDE !important;
 }
 
 .instructor-info-action:hover {
@@ -76,4 +78,5 @@ strong {
 	font-size: 16px !important;
 	border-radius: 0 !important;
 	text-decoration: none !important;
+	border: 1px solid #009CDE !important;
 }
