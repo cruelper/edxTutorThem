@@ -31,6 +31,8 @@
 
 <%block name="pagetitle">${_("Courses")}</%block>
 
+<link href="${static.url('css/courses.css')}" rel="stylesheet" type="text/css" />
+
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="find-courses">
       <section class="courses-container">
@@ -65,15 +67,6 @@
             %endfor
           </ul>
         </div>
-
-
-        % if course_discovery_enabled:
-        <aside aria-label="${_('Refine Your Search')}" class="search-facets phone-menu">
-          <h2 class="header-search-facets">${_('Refine Your Search')}</h2>
-          <section class="search-facets-lists">
-          </section>
-        </aside>
-        % endif
 
       </section>
     </section>
