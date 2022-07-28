@@ -1,0 +1,17 @@
+.course-info {
+    height: 140px !important;
+}
+
+.courses-listing-item{
+	clear: none !important;
+	float: left !important;
+    display: block !important;
+    padding-right: 2% !important;
+    width: 25% !important;
+	max-height: 400px !important;
+}
+
+.course-image .cover-image {
+    height: auto !important;
+    overflow: hidden !important;
+}
