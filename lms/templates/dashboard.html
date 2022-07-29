@@ -111,6 +111,8 @@ from common.djangoapps.student.models import CourseEnrollment
   % endif
 </%block>
 
+<link href="${static.url('css/dashboard.css')}" rel="stylesheet" type="text/css" />
+
 <div class="dashboard-notifications" tabindex="-1">
 
     %if banner_account_activation_message:
@@ -271,6 +273,14 @@ from common.djangoapps.student.models import CourseEnrollment
           % endif
         </div>
       </div>
+		<%block name="skip_links">
+          % if settings.FEATURES.get('ENABLE_ANNOUNCEMENTS'):
+            <a id="announcements-skip" class="nav-skip sr-only sr-only-focusable" href="#announcements">${_("Skip to list of announcements")}</a>
+          % endif
+        </%block>
+        % if settings.FEATURES.get('ENABLE_ANNOUNCEMENTS'):
+          <%include file='dashboard/_dashboard_announcements.html' />
+        % endif
     </div>
 </main>
 
