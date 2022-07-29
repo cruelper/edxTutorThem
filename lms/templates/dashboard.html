@@ -273,7 +273,14 @@ from common.djangoapps.student.models import CourseEnrollment
           % endif
         </div>
       </div>
-		<%block name="skip_links">
+      <div class="side-container" role="complementary" aria-label="messages">
+        %if display_sidebar_account_activation_message:
+          <div class="sidebar-notification">
+            <%include file="${static.get_template_path('registration/account_activation_sidebar_notice.html')}" />
+          </div>
+        %endif
+
+        <%block name="skip_links">
           % if settings.FEATURES.get('ENABLE_ANNOUNCEMENTS'):
             <a id="announcements-skip" class="nav-skip sr-only sr-only-focusable" href="#announcements">${_("Skip to list of announcements")}</a>
           % endif
@@ -281,6 +288,8 @@ from common.djangoapps.student.models import CourseEnrollment
         % if settings.FEATURES.get('ENABLE_ANNOUNCEMENTS'):
           <%include file='dashboard/_dashboard_announcements.html' />
         % endif
+
+      </div>
     </div>
 </main>
 
