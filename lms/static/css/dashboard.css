@@ -1,0 +1,13 @@
+.content-wrapper {
+    margin-top: 75px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-bottom: 0 !important;
+    max-width: 1180px !important;
+    padding: 20px 0 !important;
+}
+
+.side-container{
+	min-width: 0 !important;
+	max-width: 300px !important;
+}
