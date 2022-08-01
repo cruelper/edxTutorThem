@@ -21,6 +21,8 @@ from openedx.core.djangolib.markup import HTML, Text
 from common.djangoapps.student.models import CourseEnrollment
 %>
 
+<link href="${static.url('css/dashboard.css')}" rel="stylesheet" type="text/css" />
+
 <%
   cert_name_short = settings.CERT_NAME_SHORT
   cert_name_long = settings.CERT_NAME_LONG
