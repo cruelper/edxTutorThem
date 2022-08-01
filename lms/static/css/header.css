@@ -10,11 +10,11 @@
 }
 
 .dropdown-user-menu {
-    border: 1px solid #313131;
-    position: absolute;
-    background-color: #fff;
-    color: #313131;
-    right: 30px;
-    top: 65px;
-    z-index: 10;
+    border: 1px solid #313131 !important;
+    position: absolute !important;
+    background-color: #fff !important;
+    color: #313131 !important;
+    right: 30px !important;
+    top: 65px !important;
+    z-index: 10 !important;
 }
