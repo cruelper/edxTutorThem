@@ -10,5 +10,5 @@
 .side-container{
 	min-width: 0 !important;
 	max-width: 300px !important;
-	padding: 0px;
+	padding: 0px !important;
 }
