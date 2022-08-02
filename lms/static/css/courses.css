@@ -24,3 +24,14 @@
 	width: 100% !important;
 }
 
+.find-courses .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(4n+1), .university-profile .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(4n+1) {
+    clear: none !important;
+}
+
+.courses-listing-item {
+	float: left !important;
+    display: block !important;
+    padding: 1% !important;
+    width: 25% !important;
+}
+
