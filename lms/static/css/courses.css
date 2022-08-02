@@ -24,7 +24,7 @@
 	width: 100% !important;
 }
 
-.find-courses .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(3n+1), .university-profile .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(3n+1) {
+.find-courses .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(n), .university-profile .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(n) {
     clear: none !important;
 }
 
