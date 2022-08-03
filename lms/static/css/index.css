@@ -603,7 +603,9 @@ button:active:not(:disabled), button:focus:not(:disabled),{
 	}
 }
 
-.home .courses-container .courses .courses-listing .courses-listing-item {
-    width: 100% !important;
-    box-sizing: border-box !important;
+@media screen and (max-width: 540px){
+	.home .courses-container .courses .courses-listing .courses-listing-item {
+		width: 100% !important;
+		box-sizing: border-box !important;
+	}
 }
