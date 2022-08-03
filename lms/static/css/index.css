@@ -128,8 +128,8 @@ body {
 }
 
 .courses-container .courses{
-	max-width: 98%;
-	margin: auto;
+	max-width: 100%;
+	margin: 20px auto 0 auto;
 	float:none;
 }
 
@@ -193,6 +193,7 @@ body {
 	max-width:1600px !important;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 0px !important;
 }
 
 .course-info .course-profile .intro-inner-wrapper{
