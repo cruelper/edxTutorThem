@@ -1,3 +1,7 @@
+.content-wrapper {
+    margin-top: 0px !important;
+}
+
 .courses-container {
     max-width: 1600px !important;
     margin-left: auto !important;
@@ -22,17 +26,5 @@
 
 .courses {
 	width: 100% !important;
-}
-
-.find-courses .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(n), .university-profile .courses-container .courses:not(.no-course-discovery) .courses-listing .courses-listing-item:nth-child(n) {
-    clear: none !important;
-}
-
-.courses-listing-item {
-	float: left !important;
-    display: block !important;
-    padding: 1% !important;
-    width: 25% !important;
-	margin-right: 0 !important;
 }
 
