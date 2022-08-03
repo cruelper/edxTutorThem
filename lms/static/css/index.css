@@ -568,7 +568,7 @@ button:active:not(:disabled), button:focus:not(:disabled),{
 	.home .courses-container .courses .courses-listing .courses-listing-item {
 		float: left !important;
 		display: block !important;
-		margin-right: 2.1% !important;
+		margin: 0 2.1% 0 0 !important;
 		width: 22.4% !important;
 	}
 }
@@ -583,7 +583,7 @@ button:active:not(:disabled), button:focus:not(:disabled),{
 	.home .courses-container .courses .courses-listing .courses-listing-item {
 		float: left !important;
 		display: block !important;
-		margin-right: 2.2% !important;
+		margin: 0 2.2% 0 0 !important;
 		width: 31.2% !important;
 	}
 }
@@ -597,8 +597,8 @@ button:active:not(:disabled), button:focus:not(:disabled),{
 	}
 	.home .courses-container .courses .courses-listing .courses-listing-item {
 		float: left !important;
-		display: block v
-		margin-right: 3% !important;
+		display: block !important;
+		margin: 0 3% 0 0 !important;
 		width: 47.5% !important;
 	}
 }
