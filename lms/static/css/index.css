@@ -132,7 +132,7 @@ body {
 }
 
 .courses-container .courses{
-	max-width: 100%;
+	max-width: 98%;
 	margin: 20px auto 0 auto;
 	float:none;
 }
@@ -554,4 +554,68 @@ button:active:not(:disabled), button:focus:not(:disabled),{
 	font-size:13pt;
 	text-align:left;
 	vertical-align:middle;
+}
+
+
+
+@media screen and (min-width: 980px)
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(4n+1) {
+    clear: left;
+}
+
+@media screen and (min-width: 980px)
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 980px)
+.home .courses-container .courses .courses-listing .courses-listing-item {
+    float: left;
+    display: block;
+    margin-right: 2.1%;
+    width: 22.4%;
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 979px)
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(3n+1) {
+    clear: left;
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px)
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px)
+.home .courses-container .courses .courses-listing .courses-listing-item {
+    float: left;
+    display: block;
+    margin-right: 2.2%;
+    width: 31.2%;
+}
+
+
+@media screen and (min-width: 541px) and (max-width: 768px)
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(2n+1) {
+    clear: left;
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px)
+.home .courses-container .courses .courses-listing .courses-listing-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px)
+.home .courses-container .courses .courses-listing .courses-listing-item {
+    float: left;
+    display: block;
+    margin-right: 3%;
+    width: 47.5%;
+}
+
+.home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 100%;
+    box-sizing: border-box;
 }
