@@ -13,6 +13,10 @@ body {
 	background-image: url('../images/ssau_rocket.jpg');
 }
 
+.content-wrapper {
+    padding: 0 0 10px;
+}
+
 .ssau_head div {
 	display: inline-block;
 	width: 50%; text-align: center;
@@ -256,7 +260,7 @@ body {
 }
 
 .white-with-shadow{
-	width:98%;
+	width:100%;
 	margin-left:auto;
 	margin-right:auto;
 	background-color: rgb(255,255,255);
