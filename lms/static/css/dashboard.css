@@ -1,5 +1,5 @@
 .content-wrapper {
-    margin-top: 75px !important;
+    margin-top: 0px !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	margin-bottom: 0 !important;
@@ -11,4 +11,30 @@
 	min-width: 0 !important;
 	max-width: 300px !important;
 	padding: 0px !important;
+}
+
+.enter-course{
+	color: #2780e3;
+	background-color: #fff;
+	border-radius: 0px;
+	border: 1px solid #2780e3;
+}
+
+.enter-course:hover{
+	color: #fff !important;
+	background-color: #2780e3 !important;
+}
+
+.action-more{
+    font-size: 20px !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    background-image: none !important;
+    color: #767676 !important;
+    line-height: 20px !important;
+    text-shadow: none !important;
+}
+
+.action-more:hover{
+    color: #2780e3 !important;
 }
