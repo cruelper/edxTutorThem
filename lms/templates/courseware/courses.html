@@ -32,6 +32,8 @@
 <%block name="pagetitle">${_("Courses")}</%block>
 
 <link href="${static.url('css/courses.css')}" rel="stylesheet" type="text/css" />
+<link href="${static.url('css/index.css')}" rel="stylesheet" type="text/css" />
+<link href="${static.url('css/course.css')}" rel="stylesheet" type="text/css" />
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="find-courses">
@@ -57,9 +59,6 @@
         <div id="filter-bar" class="filters hide-phone is-collapsed">
         </div>
         % endif
-
-	<link href="${static.url('css/course.css')}" rel="stylesheet" type="text/css" />
-	<link href="${static.url('css/index.css')}" rel="stylesheet" type="text/css" />
 
         <div class="courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('List of Courses')}">
           <ul class="courses-listing courses-list">
