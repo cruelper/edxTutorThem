@@ -1,6 +1,6 @@
 .global-header {
-	position: static !important;
-	overflow: hidden !important;
+	position: relative !important;
+	overflow: visible !important;
     max-width: 1600px !important;
     padding-bottom: 10px !important;
     border-bottom: 1px solid #2780e3 !important;
@@ -8,6 +8,7 @@
     line-height: 1.5 !important;
     display: block !important;
     margin: 0 auto !important;
+	padding-bottom: 0 !important;
 }
 
 .dropdown-user-menu {
@@ -18,4 +19,9 @@
     right: 30px !important;
     top: 65px !important;
     z-index: 10 !important;
+}
+
+.main-header {
+    display: inline-block;
+    width: 100%;
 }
