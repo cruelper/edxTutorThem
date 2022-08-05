@@ -1,5 +1,5 @@
 .main-container{
 	margin-top: 0 !important;
-	max-width: 1600px;
-	margin: 0 auto;
+	max-width: 1600px !important;
+	margin: 0 auto !important;
 }
