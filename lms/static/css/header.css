@@ -2,7 +2,7 @@
 	position: relative !important;
 	overflow: visible !important;
     max-width: 1600px !important;
-    padding-bottom: 10px !important;
+	min-height: 75px !important;
     border-bottom: 1px solid #2780e3 !important;
     background: #fff !important;
     line-height: 1.5 !important;
