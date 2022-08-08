@@ -40,3 +40,12 @@
     color: #2780e3 !important;
 	border: 0px !important;
 }
+
+.wrapper-course-image{
+	float: left !important;
+    margin-right: 20px !important;
+    width: 22% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    display: inline-block !important;
+}
