@@ -8,8 +8,8 @@
 }
 
 @media screen and (min-width: 980px){
-	.courses-container .courses .courses-listing .courses-listing-item:nth-child(n) {
-		clear: none;
+	.courses-container .courses .courses-listing .courses-listing-item:nth-child(3n+1) {
+		clear: none !important;
 	}
 	.courses-container .courses .courses-listing .courses-listing-item:nth-child(4n+1) {
 		clear: left !important;
@@ -26,7 +26,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 979px){
-	.courses-container .courses .courses-listing .courses-listing-item:nth-child(n) {
+	.courses-container .courses .courses-listing .courses-listing-item:nth-child(2n+1) {
 		clear: none;
 	}
 	.courses-container .courses .courses-listing .courses-listing-item:nth-child(3n+1) {
@@ -44,9 +44,6 @@
 }
 
 @media screen and (min-width: 541px) and (max-width: 768px){
-	.courses-container .courses .courses-listing .courses-listing-item:nth-child(n) {
-		clear: none;
-	}
 	.courses-container .courses .courses-listing .courses-listing-item:nth-child(2n+1) {
 		clear: left !important;
 	}
