@@ -26,5 +26,13 @@
 
 .courses {
 	width: 100% !important;
+	margin: 20px auto 0 auto !important;
+    float: none !important;
+}
+
+.courses-listing {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
 }
 
