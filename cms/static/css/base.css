@@ -11,6 +11,7 @@ a.button, button {
 	background: #2780e3 !important;
 	border-color: #2780e3 !important;
     color: #fff !important;
+	box-shadow: none;
 }
 
 a.button:hover, button:hover {
@@ -19,14 +20,18 @@ a.button:hover, button:hover {
     color: #2780e3 !important;
 }
 
-.action-button:hover, .action-edit:hover {
+.action-button:hover, .action-edit:hover, .action-edit:hover {
 	background: transparent !important;
 }
 
-.configure-button:hover, .action-edit:hover {
+.configure-button:hover, .duplicate-button:hover, .action-edit:hover {
 	color: #2780e3 !important;
 }
 
-.duplicate-button:hover {
+.delete-button:hover {
 	color: red !important;
+}
+
+.block-highlights-value:hover{
+	background: transparent !important;
 }
