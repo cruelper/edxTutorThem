@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 979px){
 	.courses-container .courses .courses-listing .courses-listing-item:nth-child(2n+1) {
-		clear: none;
+		clear: none !important;
 	}
 	.courses-container .courses .courses-listing .courses-listing-item:nth-child(3n+1) {
 		clear: left !important;
