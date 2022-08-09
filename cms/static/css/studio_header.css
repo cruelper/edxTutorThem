@@ -1,0 +1,24 @@
+.wrapper-r{
+	width: 100% !important;
+	max-width: 25% !important;
+}
+
+.wrapper-l{
+	width: 100% !important;
+	max-width: 75% !important;
+}
+
+.info-course{
+	max-width: 50% !important;
+	
+}
+
+.branding{
+	max-width: 48% !important;
+	margin-right: 2% !important;
+}
+
+.nav-course{
+	max-width: 100% !important;
+	width: 100% !important;
+}
