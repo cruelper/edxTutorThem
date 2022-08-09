@@ -1,0 +1,11 @@
+.wrapper-header header.primary {
+    box-sizing: border-box;
+    max-width: 1600px;
+    min-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a.button {
+    border-radius: 0px !important;
+}

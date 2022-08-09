@@ -9,8 +9,8 @@
 }
 
 .info-course{
+	width: 100% !important;
 	max-width: 50% !important;
-	
 }
 
 .branding{
