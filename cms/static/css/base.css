@@ -1,11 +1,32 @@
 .wrapper-header header.primary {
-    box-sizing: border-box;
-    max-width: 1600px;
-    min-width: 900px;
-    width: 100%;
-    margin: 0 auto;
+    box-sizing: border-box !important;
+    max-width: 1280px !important;
+    min-width: 1280px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
 }
 
-a.button {
+a.button, button {
     border-radius: 0px !important;
+	background: #2780e3 !important;
+	border-color: #2780e3 !important;
+    color: #fff !important;
+}
+
+a.button:hover, button:hover {
+	background: #fff !important;
+	border-color: #2780e3 !important;
+    color: #2780e3 !important;
+}
+
+.action-button:hover, .action-edit:hover {
+	background: transparent !important;
+}
+
+.configure-button:hover, .action-edit:hover {
+	color: #2780e3 !important;
+}
+
+.duplicate-button:hover {
+	color: red !important;
 }
