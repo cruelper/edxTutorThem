@@ -11,7 +11,7 @@ a.button, button {
 	background: #2780e3 !important;
 	border-color: #2780e3 !important;
     color: #fff !important;
-	box-shadow: none;
+	box-shadow: none !important;
 }
 
 a.button:hover, button:hover {
@@ -20,7 +20,7 @@ a.button:hover, button:hover {
     color: #2780e3 !important;
 }
 
-.action-button:hover, .action-edit:hover, .action-edit:hover {
+.action-button:hover, .action-edit:hover, .action-edit:hover, .block-highlights-value:hover, .block-highlights-value, .action-edit {
 	background: transparent !important;
 }
 
@@ -32,6 +32,6 @@ a.button:hover, button:hover {
 	color: red !important;
 }
 
-.block-highlights-value:hover{
-	background: transparent !important;
+.action-item {
+    font-size: 2rem !important;
 }
