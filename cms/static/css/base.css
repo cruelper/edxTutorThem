@@ -146,3 +146,56 @@ a.button:hover, button:hover {
 	display: none !important;
 }
 
+#field-course-grading-range > div > a:hover {
+    background-color: #2780e3 !important;
+    color: #fff !important;
+}
+#field-course-grading-range > div > a {
+    border-radius: 0 !important;
+    border: 1px solid #2780e3 !important;
+    color: #2780e3 !important;
+    background-image: none !important;
+    background: #fff !important;
+    box-shadow: none !important;
+	height: 50px !important;
+}
+
+#field-course-grading-range > div > div > div > ol.increments {
+	margin-bottom: 0px !important;
+}
+
+#settings_details > section.group-settings.assignment-types > div > a, 
+#fileupload > a, 
+#content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a,
+#checklist-item-welcomeMessage > div > div > a,
+a.px-3.btn.btn-primary.checklist-item-link {
+	border-radius: 0 !important;
+    border: 1px solid #2780e3 !important;
+    color: #2780e3 !important;
+    background-image: none !important;
+    background: #fff !important;
+    box-shadow: none !important;
+}
+
+#settings_details > section.group-settings.assignment-types > div > a:hover, 
+#fileupload > a:hover, 
+#content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a:hover,
+a.px-3.btn.btn-primary.checklist-item-link:hover {
+    color: #fff !important;
+    background: #2780e3 !important;
+    box-shadow: none !important;
+}
+
+
+#settings_details > section.group-settings.assignment-types > div > a {
+	background-color: #2780e3 !important;
+    color: #fff !important;
+}
+
+#user-list > li > span > span {
+    background: #2780e3 !important;
+}
+
+#user-list > li > span > span > span.value > span {
+	color: #fff !important;
+}
