@@ -125,3 +125,24 @@ a.button:hover, button:hover {
 	background: transparent !important;
 	color: #2780e3 !important;
 }
+
+#root > div > div.container > div:nth-child(4) > div.col > span > div > div {
+    color: #2780e3 !important;
+	border-color: #2780e3 !important;
+}
+
+#table-contents > div > table > thead > tr > th.sortable > button {
+    background: transparent !important;
+    color: black !important;
+    border: 0 !important;
+}
+
+#root > div > div.container > div:nth-child(2) > div > div > div {
+	border-radius: 0 !important;
+	
+}
+
+#label-asInput2, #root > div > div.container > div:nth-child(2) > div > div > div > div > div.input-group > div.input-group-prepend {
+	display: none !important;
+}
+
