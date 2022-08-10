@@ -24,6 +24,16 @@ a.button:hover, button:hover {
 	background: transparent !important;
 }
 
+div.block-highlights > button.highlights-button{
+	font-size: 1.5rem !important;
+	color: #666 !important;
+}
+
+div.block-highlights > button.highlights-button:hover{
+	font-size: 1.5rem !important;
+	color: #2780e3 !important;
+}
+
 .configure-button:hover, .duplicate-button:hover, .action-edit:hover {
 	color: #2780e3 !important;
 }
@@ -184,12 +194,6 @@ a.px-3.btn.btn-primary.checklist-item-link:hover {
     color: #fff !important;
     background: #2780e3 !important;
     box-shadow: none !important;
-}
-
-
-#settings_details > section.group-settings.assignment-types > div > a {
-	background-color: #2780e3 !important;
-    color: #fff !important;
 }
 
 #user-list > li > span > span {
