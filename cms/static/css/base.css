@@ -54,12 +54,16 @@ a.button:hover, button:hover {
 	background-color: #fff !important;
     color: #2780e3 !important;
 	border-color: #2780e3 !important;
+	border-radius: 0 !important;
+	background-image: none !important;
 }
 
 #course-handouts-view > a:hover {
 	background-color: #2780e3 !important;
     color: #fff !important;
 	border-color: #2780e3 !important;
+	border-radius: 0 !important;
+	background-image: none !important;
 }
 /*
 .view-static-pages .wrapper-actions-list .actions-list .action-item.action-visible label:hover {
@@ -69,18 +73,6 @@ a.button:hover, button:hover {
 .view-static-pages .wrapper-actions-list .actions-list .action-item.action-visible .toggle-checkbox:hover ~ .action-button, .view-static-pages .wrapper-actions-list .actions-list .action-item.action-visible .toggle-checkbox:checked:hover ~ .action-button {
     background: transparent !important;
     color: #2780e3 !important; 
-}
-
-#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-delete > button {
-	background: transparent !important;
-    border: 0 !important;
-    color: #666 !important;
-}
-
-#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-delete > button:hover {
-	background: transparent !important;
-    border: 0 !important;
-    color: red !important;
 }
 
 #content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit, li.action-item.action-duplicate, li.action-item.action-move > button {
@@ -100,3 +92,36 @@ a.button:hover, button:hover {
 	color: #2780e3 !important; 
 }
 */
+
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.course-nav-item-actions.wrapper-actions-list > ul > li > div {
+	color: #666 !important;
+	background: transparent !important;
+}
+
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-delete > button {
+	background: transparent !important;
+    border: 0 !important;
+    color: #666 !important;
+}
+
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-delete > button:hover {
+	background: transparent !important;
+    border: 0 !important;
+    color: red !important;
+}
+
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button > span.action-button-text {
+	display: none !important;
+}
+
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button {
+	border: 0 !important;
+	background: transparent !important;
+	color: #666 !important;
+}
+
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button:hover {
+	border: 0 !important;
+	background: transparent !important;
+	color: #2780e3 !important;
+}
