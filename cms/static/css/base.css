@@ -129,6 +129,7 @@ div.block-highlights > button.highlights-button:hover{
 	border: 0 !important;
 	background: transparent !important;
 	color: #666 !important;
+	font-size: 2rem !important;
 }
 
 #content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button:hover,
@@ -270,7 +271,7 @@ button.sequence-nav-button.button-previous {
 	color: #2780e3 !important;
 }
 
-#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-delete {
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-delete:hover {
 	color: red !important;
 }
 
@@ -278,7 +279,7 @@ button.sequence-nav-button.button-previous {
 	background-color: #666 !important;
 }
 
-#sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button, #sequence-list > li > button.active {
+#sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button:hover, #sequence-list > li > button.active {
     border-bottom: 3px solid #2780e3 !important;
 }
 
