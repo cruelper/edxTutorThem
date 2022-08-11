@@ -124,13 +124,15 @@ div.block-highlights > button.highlights-button:hover{
 	display: none !important;
 }
 
-#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button {
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button,
+#content > div.wrapper-mast.wrapper > header > div.jump-nav > div.wrapper-xblock-field.incontext-editor.is-editable > div.access-editor-action-wrapper > button {
 	border: 0 !important;
 	background: transparent !important;
 	color: #666 !important;
 }
 
-#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button:hover {
+#content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button:hover,
+#content > div.wrapper-mast.wrapper > header > div.jump-nav > div.wrapper-xblock-field.incontext-editor.is-editable > div.access-editor-action-wrapper > button:hover {
 	border: 0 !important;
 	background: transparent !important;
 	color: #2780e3 !important;
@@ -178,7 +180,8 @@ div.block-highlights > button.highlights-button:hover{
 #fileupload > a, 
 #content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a,
 #checklist-item-welcomeMessage > div > div > a,
-a.px-3.btn.btn-primary.checklist-item-link {
+a.px-3.btn.btn-primary.checklist-item-link,
+#settings_details > div.group-settings.basic > div > ul > li > a {
 	border-radius: 0 !important;
     border: 1px solid #2780e3 !important;
     color: #2780e3 !important;
@@ -190,7 +193,8 @@ a.px-3.btn.btn-primary.checklist-item-link {
 #settings_details > section.group-settings.assignment-types > div > a:hover, 
 #fileupload > a:hover, 
 #content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a:hover,
-a.px-3.btn.btn-primary.checklist-item-link:hover {
+a.px-3.btn.btn-primary.checklist-item-link:hover,
+#settings_details > div.group-settings.basic > div > ul > li > a {
     color: #fff !important;
     background: #2780e3 !important;
     box-shadow: none !important;
@@ -202,4 +206,41 @@ a.px-3.btn.btn-primary.checklist-item-link:hover {
 
 #user-list > li > span > span > span.value > span {
 	color: #fff !important;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > div > div.new-component > h5{
+	color: #2780e3 !important;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > div.container-message.wrapper-message > div > p > span{
+	font-size: 2rem !important;
+}
+
+#sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button,
+#sequence-list > li > button {
+    box-shadow: none !important;
+    border: 1px solid #e7e7e7 !important;
+    color: black !important;
+    background-color: #fff !important;
+}
+
+#sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button:hover,
+#sequence-list > li > button:hover {
+    border-bottom: 3px solid #e7e7e7 !important;
+}
+
+#content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a {
+    background-color: #2780e3 !important;
+    border: 1px solid #2780e3 !important;
+    color: #fff !important;
+    padding: 10px !important;
+}
+
+#content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a:hover {
+    background: transparent !important;
+    color: #2780e3 !important;
+}
+
+#publish-unit > div > div.wrapper-pub-actions.bar-mod-actions > ul > li:nth-child(1) {
+	border-radius: 0 !important;
 }
