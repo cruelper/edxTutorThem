@@ -213,7 +213,7 @@ a.px-3.btn.btn-primary.checklist-item-link:hover,
 }
 
 #content > div.wrapper-content.wrapper > div > section > article > div.container-message.wrapper-message > div > p > span{
-	font-size: 2rem !important;
+	font-size: 3rem !important;
 }
 
 #sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button,
@@ -226,7 +226,7 @@ a.px-3.btn.btn-primary.checklist-item-link:hover,
 
 #sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button:hover,
 #sequence-list > li > button:hover {
-    border-bottom: 3px solid #e7e7e7 !important;
+    border-bottom: 3px solid #2780e3 !important;
 }
 
 #content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a {
@@ -241,6 +241,37 @@ a.px-3.btn.btn-primary.checklist-item-link:hover,
     color: #2780e3 !important;
 }
 
-#publish-unit > div > div.wrapper-pub-actions.bar-mod-actions > ul > li:nth-child(1) {
+#publish-unit > div > div.wrapper-pub-actions.bar-mod-actions > ul > li:nth-child(1) > a {
 	border-radius: 0 !important;
+}
+
+.wrapper-message .message {
+    background-color: #fff !important;
+    padding: 10px 15px !important;
+    color: black !important;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-edit > button > span.action-button-text {
+    display: none;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item > button {
+    color: #666 !important;
+    border: 0px !important;
+    font-size: 3rem !important;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-edit > button:hover,
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-duplicate,
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-visibility,
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-move {
+	color: #2780e3 !important;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-delete {
+	color: red !important;
+}
+
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > div > div.new-component > ul > li > button:hover {
+	background-color: #666 !important;
 }
