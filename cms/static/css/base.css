@@ -226,7 +226,8 @@ button.sequence-nav-button.button-previous {
     background-color: #fff !important;
 }
 
-#sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button:hover,
+button.sequence-nav-button.button-previous:hover,
+button.sequence-nav-button.button-next:hover,
 #sequence-list > li > button:hover {
     border-bottom: 3px solid #2780e3 !important;
 }
@@ -271,7 +272,7 @@ button.sequence-nav-button.button-previous {
 	color: #2780e3 !important;
 }
 
-#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-delete:hover {
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-delete > button:hover {
 	color: red !important;
 }
 
@@ -288,8 +289,9 @@ button.control.video_control.play {
     font-size: 2rem !important;
 }
 
-#video_1b95a9f4f2394e5184f9becd32361ed8 > div.tc-wrapper > div > div.video-controls > div > div.secondary-controls > div > button,
-#video_1b95a9f4f2394e5184f9becd32361ed8 > div.tc-wrapper > div > div.video-controls > div > div.secondary-controls > button {
+button.control.speed-button,
+button.control.quality-control,
+button.control.add-fullscreen {
     background: transparent !important;
 }
 
