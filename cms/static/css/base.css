@@ -125,14 +125,14 @@ div.block-highlights > button.highlights-button:hover{
 }
 
 #content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button,
-#content > div.wrapper-mast.wrapper > header > div.jump-nav > div.wrapper-xblock-field.incontext-editor.is-editable > div.access-editor-action-wrapper > button {
+#content > div.wrapper-mast.wrapper > header > div.jump-nav > div.wrapper-xblock-field.incontext-editor.is-editable > div > button {
 	border: 0 !important;
 	background: transparent !important;
 	color: #666 !important;
 }
 
 #content > div.wrapper-content.wrapper > section > article > div.inner-wrapper > article > div.tab-list > ol > li > div.wrapper.wrapper-component-action-header > ul > li.action-item.action-edit > button:hover,
-#content > div.wrapper-mast.wrapper > header > div.jump-nav > div.wrapper-xblock-field.incontext-editor.is-editable > div.access-editor-action-wrapper > button:hover {
+#content > div.wrapper-mast.wrapper > header > div.jump-nav > div.wrapper-xblock-field.incontext-editor.is-editable > div > button:hover {
 	border: 0 !important;
 	background: transparent !important;
 	color: #2780e3 !important;
@@ -216,8 +216,9 @@ a.px-3.btn.btn-primary.checklist-item-link:hover,
 	font-size: 3rem !important;
 }
 
-#sequence_d98836efa2254f4e8286e04bfd35a599 > div.sequence-nav > button.sequence-nav-button,
-#sequence-list > li > button {
+button.sequence-nav-button.button-next,
+#sequence-list > li > button,
+button.sequence-nav-button.button-previous {
     box-shadow: none !important;
     border: 1px solid #e7e7e7 !important;
     color: black !important;
@@ -265,7 +266,7 @@ a.px-3.btn.btn-primary.checklist-item-link:hover,
 #content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-edit > button:hover,
 #content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-duplicate > button:hover,
 #content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-visibility > button:hover,
-#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-move > button:hover, {
+#content > div.wrapper-content.wrapper > div > section > article > section > article > div > ol > li > section > header > div.xblock-header-primary > div.header-actions > ul > li.action-item.action-move > button:hover {
 	color: #2780e3 !important;
 }
 
@@ -295,7 +296,7 @@ button.control.video_control.play {
 .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-controls .secondary-controls .volume .volume-slider-container .volume-slider .ui-slider-range,
 .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-controls .slider .ui-slider-handle,
 .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-controls .slider .ui-widget-header {
-    border: 1px solid #2780e3;
-    background: #2780e3;
+    border: 1px solid #2780e3 !important;
+    background: #2780e3 !important;
 }
 
