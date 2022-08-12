@@ -195,7 +195,7 @@ a.px-3.btn.btn-primary.checklist-item-link,
 #fileupload > a:hover, 
 #content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a:hover,
 a.px-3.btn.btn-primary.checklist-item-link:hover,
-#settings_details > div.group-settings.basic > div > ul > li > a {
+#settings_details > div.group-settings.basic > div > ul > li > a:hover {
     color: #fff !important;
     background: #2780e3 !important;
     box-shadow: none !important;
@@ -347,4 +347,27 @@ a.button.action-cancel {
 
 #prompt-warning > div > nav > ul > li > button:hover {
     color: black !important;
+}
+
+button.unbutton.btn-link.keyboard-help-button {
+    background: transparent !important;
+    color: #2780e3 !important;
+}
+
+button.modal-dismiss-button.unbutton {
+    background: transparent !important;
+    color: #666 !important;
+}
+
+button.modal-dismiss-button.unbutton:hover {
+    color: #2780e3 !important;
+}
+
+.xblock--drag-and-drop .sidebar-buttons .sidebar-button-wrapper {
+    height: auto !important;
+}
+
+button.save.problem-action-btn.btn-link.btn-small {
+    background: transparent !important;
+    color: #2780e3 !important;
 }
