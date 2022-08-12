@@ -291,7 +291,8 @@ button.control.video_control.play {
 
 button.control.speed-button,
 button.control.quality-control,
-button.control.add-fullscreen {
+button.control.add-fullscreen,
+button.control {
     background: transparent !important;
 }
 
@@ -301,6 +302,10 @@ button.control.add-fullscreen {
 .xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-controls .slider .ui-widget-header {
     border: 1px solid #2780e3 !important;
     background: #2780e3 !important;
+}
+
+.xmodule_display.xmodule_VideoBlock .video .video-wrapper .video-controls .secondary-controls .volume .volume-slider-container {
+    bottom: 34px !important;
 }
 
 a.action.action-primary.action-settings {
