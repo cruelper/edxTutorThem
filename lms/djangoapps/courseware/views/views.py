@@ -778,9 +778,8 @@ def course_about(request, course_id):  # pylint: disable=too-many-statements
 
         if request.user.has_perm(VIEW_COURSE_HOME, course):
             course_target = 'https://openedx.ssau.ru/courses/' + course.id + '/course'
-			course_home_url(course.id)
         else:
-            course_target = reverse('about_course', args=[str(course.id)])
+            course_target = 'https://openedx.ssau.ru/courses/' + course.id + '/about'
 
         show_courseware_link = bool(
             (
