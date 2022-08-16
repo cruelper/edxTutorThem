@@ -54,6 +54,10 @@ div.block-highlights > button.highlights-button:hover{
     height: auto !important;
 }
 
+.form-create .list-input .field input, .form-create .list-input .field textarea {
+    height: auto;
+}
+
 .remove-course-introduction-video:hover {
 	background-color: #fff !important;
     color: red !important;
@@ -159,11 +163,13 @@ div.block-highlights > button.highlights-button:hover{
 	display: none !important;
 }
 
-#field-course-grading-range > div > a:hover {
+#field-course-grading-range > div > a:hover,
+#create-course-form > div.actions > input.action.action-secondary.action-cancel.new-course-cancel:hover {
     background-color: #2780e3 !important;
     color: #fff !important;
 }
-#field-course-grading-range > div > a {
+#field-course-grading-range > div > a,
+#create-course-form > div.actions > input.action.action-secondary.action-cancel.new-course-cancel {
     border-radius: 0 !important;
     border: 1px solid #2780e3 !important;
     color: #2780e3 !important;
@@ -179,6 +185,7 @@ div.block-highlights > button.highlights-button:hover{
 
 #settings_details > section.group-settings.assignment-types > div > a, 
 #fileupload > a, 
+#replace-courselike-button,
 #content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a,
 #checklist-item-welcomeMessage > div > div > a,
 a.px-3.btn.btn-primary.checklist-item-link,
@@ -193,6 +200,7 @@ a.px-3.btn.btn-primary.checklist-item-link,
 
 #settings_details > section.group-settings.assignment-types > div > a:hover, 
 #fileupload > a:hover, 
+#replace-courselike-button:hover,
 #content > div.wrapper-content.wrapper > section > article > div.export-controls > h2 > ul > li > a:hover,
 a.px-3.btn.btn-primary.checklist-item-link:hover,
 #settings_details > div.group-settings.basic > div > ul > li > a:hover {
@@ -232,7 +240,8 @@ button.sequence-nav-button.button-next:hover,
     border-bottom: 3px solid #2780e3 !important;
 }
 
-#content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a {
+#content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a,
+#create-course-form > div.actions > input.action.action-primary.new-course-save {
     background-color: #2780e3 !important;
     border: 1px solid #2780e3 !important;
     color: #fff !important;
@@ -240,7 +249,8 @@ button.sequence-nav-button.button-next:hover,
 	font-size: 1.5rem !important;
 }
 
-#content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a:hover {
+#content > div.wrapper-mast.wrapper > header > nav > ul > li.action-item.nav-item > a:hover,
+#create-course-form > div.actions > input.action.action-primary.new-course-save.is-disabled:hover {
     background: transparent !important;
     color: #2780e3 !important;
 }

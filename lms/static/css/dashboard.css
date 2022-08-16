@@ -50,3 +50,23 @@
     display: inline-block !important;
 	max-height: 400px !important;
 }
+
+#unenroll_form > div > input {
+    border-radius: 0 !important;
+    border: 1px solid #2780e3 !important;
+    background-color: #2780e3 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+	color: #fff !important;
+}
+
+#unenroll_form > div > input:hover {
+    border-radius: 0 !important;
+    border: 1px solid #2780e3 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+	color: #2780e3 !important;
+}

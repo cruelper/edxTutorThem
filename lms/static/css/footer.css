@@ -69,3 +69,17 @@ img {
     -ms-interpolation-mode: bicubic;
     vertical-align: middle;
 }
+
+.wrapper-footer .nav-legal ul {
+    display: inline-block;
+}
+
+.wrapper-footer footer#footer-openedx .nav-legal li:not(:first-child)::before {
+    margin-right: 5px;
+    content: "-";
+}
+
+.wrapper-footer footer#footer-openedx .nav-legal li {
+    display: inline-block;
+    font-size: 0.6875em;
+}
