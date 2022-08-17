@@ -154,7 +154,7 @@ from six import string_types
         <div class="main-cta">
         %if user.is_authenticated and registered:
           %if show_courseware_link:
-			<p>${ "https://openedx.ssau.ru/"|add:request.path|slice:"0:-5"|add:"/course" }</p>
+			<p>${ ("https://openedx.ssau.ru/")|(add:request.path|slice:"0:-5")|(add:"/course") }</p>
 			<p>${ request.path|slice:"0:-5"|add:"/course" }</p>
 			<p>${ request.path|slice:"0:-5" }</p>
             <a href="">
@@ -180,7 +180,7 @@ from six import string_types
           <span class="register disabled">${_("Enrollment is Closed")}</span>
         %elif allow_anonymous:
           %if show_courseware_link:
-			<p>${ "https://openedx.ssau.ru/"|add:request.path|slice:"0:-5"|add:"/course" }</p>
+			<p>${ ("https://openedx.ssau.ru/")|(add:request.path|slice:"0:-5")|(add:"/course") }</p>
 			<p>${ request.path|slice:"0:-5"|add:"/course" }</p>
 			<p>${ request.path|slice:"0:-5" }</p>
             <a href="">
