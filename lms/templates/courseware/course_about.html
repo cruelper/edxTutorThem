@@ -155,9 +155,9 @@ from six import string_types
         %if user.is_authenticated and registered:
           %if show_courseware_link:
 			<p>URL of this page: ${ request.build_absolute_uri }</p>
-            <a href="${ request.build_absolute_uri }">
 			<p>URL of this page: ${ request.get_full_path }</p>
-            <a href="${ request.get_full_path }">
+			<p>URL of this page: ${ request.path  }</p>
+            <a href=">
           %endif
 
           <span class="register disabled">${_("You are enrolled in this course")}</span>
@@ -181,9 +181,9 @@ from six import string_types
         %elif allow_anonymous:
           %if show_courseware_link:
 			<p>URL of this page: ${ request.build_absolute_uri }</p>
-            <a href="${ request.build_absolute_uri }">
 			<p>URL of this page: ${ request.get_full_path }</p>
-            <a href="${ request.get_full_path }">
+			<p>URL of this page: ${ request.path  }</p>
+            <a href="">
             <strong>${_("View Course")}</strong>
             </a>
           %endif
