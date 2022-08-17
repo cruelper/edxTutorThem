@@ -15,8 +15,6 @@ from openedx.core.lib.courses import course_image_url
 from six import string_types
 %>
 
-<%include file="get_link.py" />
-
 <%inherit file="../main.html" />
 <%block name="headextra">
   ## OG (Open Graph) title and description added below to give social media info to display
@@ -156,7 +154,7 @@ from six import string_types
         <div class="main-cta">
         %if user.is_authenticated and registered:
           %if show_courseware_link:
-			      <p>${ request.path | get_link" }</p>
+			      <p>${ request.path|add:"/base.html"" }</p>
             <a href="">
           %endif
 
@@ -180,7 +178,7 @@ from six import string_types
           <span class="register disabled">${_("Enrollment is Closed")}</span>
         %elif allow_anonymous:
           %if show_courseware_link:
-            <p>${ request.path | get_link" }</p>
+            <p>${ request.path|add:"/base.html"" }</p>
             <a href="">
             <strong>${_("View Course")}</strong>
             </a>
