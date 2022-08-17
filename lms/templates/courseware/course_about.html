@@ -154,7 +154,8 @@ from six import string_types
         <div class="main-cta">
         %if user.is_authenticated and registered:
           %if show_courseware_link:
-            <a href="${ request.path|slice:'0:10' }">
+			<p>URL of this page: {{ request.get_full_path }}</p>
+            <a href="">
           %endif
 
           <span class="register disabled">${_("You are enrolled in this course")}</span>
@@ -177,7 +178,8 @@ from six import string_types
           <span class="register disabled">${_("Enrollment is Closed")}</span>
         %elif allow_anonymous:
           %if show_courseware_link:
-            <a href="${ request.path|slice:'0:10' }">
+			<p>URL of this page: {{ request.get_full_path }}</p>
+            <a href="">
             <strong>${_("View Course")}</strong>
             </a>
           %endif
