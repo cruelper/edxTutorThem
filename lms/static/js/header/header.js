@@ -13,11 +13,11 @@ function createMobileMenu() {
         var mobileNavItem = $(this).clone().addClass('mobile-nav-link');
         mobileNavItem.removeAttr('role');
 
-        document.querySelector("#mobile-menu > div > a").className = '';
-
         mobileNavItem.find('a').attr('role', 'menuitem');
         // xss-lint: disable=javascript-jquery-append
         $('.mobile-menu').append(mobileNavItem);
+
+        document.querySelector("#mobile-menu > div > a").className = '';
     });
 }
 
