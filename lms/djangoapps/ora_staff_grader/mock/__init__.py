@@ -1,3 +1,0 @@
-"""
-Mock tooling for ESG
-"""
