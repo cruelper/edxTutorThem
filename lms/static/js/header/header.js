@@ -13,6 +13,14 @@ function createMobileMenu() {
         var mobileNavItem = $(this).clone().addClass('mobile-nav-link');
         mobileNavItem.removeAttr('role');
 
+        if((' ' + mobileNavItem.find('a') + ' ').indexOf(' ' + "sign-in-btn btn" + ' ') > -1){
+            mobileNavItem.find('a').classList.remove("sign-in-btn btn");
+        }
+
+        if((' ' + mobileNavItem.find('a') + ' ').indexOf(' ' + "register-btn btn" + ' ') > -1){
+            mobileNavItem.find('a').classList.remove("register-btn btn");
+        }
+
         mobileNavItem.find('a').attr('role', 'menuitem');
         // xss-lint: disable=javascript-jquery-append
         $('.mobile-menu').append(mobileNavItem);
