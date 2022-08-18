@@ -12,8 +12,7 @@ function createMobileMenu() {
     $('.mobile-nav-item').each(function() {
         var mobileNavItem = $(this).clone().addClass('mobile-nav-link');
         mobileNavItem.removeAttr('role');
-        mobileNavItem.find('a').classList.remove('sign-in-btn btn');
-        mobileNavItem.find('a').classList.remove('register-btn btn');
+
         mobileNavItem.find('a').attr('role', 'menuitem');
         // xss-lint: disable=javascript-jquery-append
         $('.mobile-menu').append(mobileNavItem);
