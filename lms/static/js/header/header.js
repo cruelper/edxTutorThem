@@ -16,9 +16,12 @@ function createMobileMenu() {
         mobileNavItem.find('a').attr('role', 'menuitem');
         // xss-lint: disable=javascript-jquery-append
         $('.mobile-menu').append(mobileNavItem);
-
-        document.querySelector("#mobile-menu > div > a").className = '';
     });
+
+    var el = document.querySelectorAll('#mobile-menu > div > a');
+    for(var i=0;i<el.length;i++){
+        el[i].className = '';
+    }
 }
 
 $(document).ready(function() {
