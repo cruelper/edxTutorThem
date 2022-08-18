@@ -1,7 +1,5 @@
 .main-container{
-	margin-top: 0 !important;
 	max-width: 1600px !important;
 	margin: 0 auto !important;
-	padding-left: 20px !important;
-	padding-right: 20px !important;
+	padding: 20px 0 !important;
 }
