@@ -14,11 +14,13 @@ function createMobileMenu() {
         mobileNavItem.removeAttr('role');
 
         if((' ' + mobileNavItem.find('a').className + ' ').indexOf(' ' + "sign-in-btn btn" + ' ') > -1){
-            mobileNavItem.find('a').classList.remove("sign-in-btn btn");
+            mobileNavItem.find('a').classList.remove("sign-in-btn"); 
+            mobileNavItem.find('a').classList.remove("btn");
         }
 
         if((' ' + mobileNavItem.find('a').className + ' ').indexOf(' ' + "register-btn btn" + ' ') > -1){
-            mobileNavItem.find('a').classList.remove("register-btn btn");
+            mobileNavItem.find('a').classList.remove("register-btn");
+            mobileNavItem.find('a').classList.remove("btn");
         }
 
         mobileNavItem.find('a').attr('role', 'menuitem');
