@@ -13,7 +13,7 @@ function createMobileMenu() {
         var mobileNavItem = $(this).clone().addClass('mobile-nav-link');
         mobileNavItem.removeAttr('role');
 
-        mobileNavItem.find('a').className = '';
+        document.querySelector("#mobile-menu > div > a").className = '';
 
         mobileNavItem.find('a').attr('role', 'menuitem');
         // xss-lint: disable=javascript-jquery-append
