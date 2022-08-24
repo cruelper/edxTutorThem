@@ -14,6 +14,8 @@ from xmodule.partitions.partitions_service import get_all_partitions_for_course
 show_preview_menu = course and can_masquerade and supports_preview_menu
 %>
 
+<link href="${static.url('css/preview_menu.css')}" rel="stylesheet" type="text/css" />
+
 % if show_preview_menu:
     <%
     def selected(is_selected):
