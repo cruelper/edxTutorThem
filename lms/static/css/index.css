@@ -555,18 +555,3 @@ button:active:not(:disabled), button:focus:not(:disabled),{
 	text-align:left;
 	vertical-align:middle;
 }
-
-
-/* Кнопки в настройках учетной записи */
-#u-field-link-password,
-#delete-account-btn{
-    border: 1px solid #2780e3 !important;
-    color: #2780e3 !important;
-}
-
-#u-field-link-password:hover,
-#delete-account-btn:hover{
-    border: 1px solid #2780e3 !important;
-    color: #fff !important;
-	background-color: #2780e3 !important;
-}
