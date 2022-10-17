@@ -46,10 +46,6 @@ div.block-highlights > button.highlights-button:hover{
     font-size: 2.5rem !important;
 }
 
-.CodeMirror-scroll {
-    height: auto !important;
-}
-
 .view-settings .group-settings .list-input .field input, .view-settings .group-settings .list-input .field textarea, .view-settings .group-settings .list-input .field select {
     height: auto !important;
 }
