@@ -6,6 +6,10 @@
     margin: 0 auto !important;
 }
 
+#settings_advanced > section > ul > li > div.field.text.value > div > div.CodeMirror-scroll {
+    height: auto;
+}
+
 a.button, button, .remove-course-introduction-video {
     border-radius: 0px !important;
 	background: #2780e3 !important;
