@@ -6,7 +6,8 @@
 %>
 <%inherit file="../main.html" />
 <%
-  course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
+  {% comment %} course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY') {% endcomment %}
+  course_discovery_enabled = False
 %>
 
 <%namespace name='static' file='../static_content.html'/>
