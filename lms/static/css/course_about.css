@@ -21,10 +21,10 @@
 }
 
 .sbtn, strong{
-    background: #009CDE !important;
+    background: #2780e3 !important;
     color: white !important;
     font-weight: 500 !important;
-    border: 1px solid #009CDE !important;
+    border: 1px solid #2780e3 !important;
     font-size: 16px !important;
     transition: all 0.3s ease !important;
     text-transform: uppercase !important;
@@ -35,9 +35,9 @@
 
 .sbtn:hover, strong:hover{
     background: white !important;
-    color: #009CDE !important;
+    color: #2780e3 !important;
     font-weight: 500 !important;
-    border: 1px solid #009CDE !important;
+    border: 1px solid #2780e3 !important;
     font-size: 16px !important;
     transition: all 0.3s ease !important;
 	border-radius: 0 !important;
@@ -68,19 +68,19 @@ strong {
 }
 
 .instructor-info-action {
-	background-color: #009CDE !important;
+	background-color: #2780e3 !important;
 	color: white !important;
 	font-size: 16px !important;
 	border-radius: 0 !important;
 	text-decoration: none !important;
-	border: 1px solid #009CDE !important;
+	border: 1px solid #2780e3 !important;
 }
 
 .instructor-info-action:hover {
 	background-color: white !important;
-	color: #009CDE !important;
+	color: #2780e3 !important;
 	font-size: 16px !important;
 	border-radius: 0 !important;
 	text-decoration: none !important;
-	border: 1px solid #009CDE !important;
+	border: 1px solid #2780e3 !important;
 }
