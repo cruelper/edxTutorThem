@@ -1,124 +1,68 @@
 <%page expression_filter="h"/>
-<%inherit file="../main.html" />
-<%namespace name='static' file='../static_content.html'/>
 <%!
-from django.utils.translation import ugettext as _
-from django.urls import reverse
-
-from openedx.core.djangolib.markup import HTML, Text
+  import json
+  from django.utils.translation import ugettext as _
+  from openedx.core.djangolib.js_utils import js_escaped_string, dump_js_escaped_json
+%>
+<%inherit file="../main.html" />
+<%
+  course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
 %>
 
-<link href="${static.url('css/counter.css')}" rel="stylesheet" type="text/css" />
-<link href="${static.url('css/index.css')}" rel="stylesheet" type="text/css" />
-<link href="${static.url('css/course.css')}" rel="stylesheet" type="text/css" />
-<link href="${static.url('css/bootstrap.css')}" rel="stylesheet" type="text/css" />
-<script src="${static.url('js/counterup2@2.0.2.js')}"></script>
-<script src="${static.url('js/jquery.min.js')}"></script>
-<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+<%namespace name='static' file='../static_content.html'/>
 
-
-<div class="white-with-shadow">
-	<div class="ssau_head "></div>
-	
-	<div class="ssau_index_1">
-		Массовые открытые онлайн-курсы (MOOC) – курсы для тех,<br /> кто хочет расширить горизонты своих знаний<br>
-		<a href="/courses" /><button style="">Перейти к курсам</button></a>
-	</div> 
-</div>
-	 
-<div class="white-with-shadow">
-	<div class="ssau_index_2_test">
-		<div class="row">
-			<div class="cell">
-				<div style="display:table-row; height:100%; width:100%;">
-					<img src="${static.url('images/video-player.png')}" />
-					<p>Интересные видео-лекции по каждой теме курса</p>
-				</div>
-			</div>
-			<div class="cell">
-				<div style="display:table-row; height:100%; width:100%;">
-					<img src="${static.url('images/exam.png')}" />
-					<p>Промежуточные и итоговые тесты для закрепления пройденного материала</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row"><br></div>
-		
-		<div class="row">
-			<div class="cell">
-				<div style="display:table-row; height:100%; width:100%;">
-					<img src="${static.url('images/group.png')}" />
-					<p>Обсуждение вопросов и взаимопощь на форумах</p>
-				</div>
-			</div>
-			<div class="cell">
-				<div style="display:table-row; height:100%; width:100%;">
-					<img src="${static.url('images/diploma.png')}" />
-					<p>Возможность получения сертификата о прохождении курса и его перезачет</p>
-				</div>
-			</div>
-		</div>	 
-	</div>
-</div>
-       
-<div class="white-with-shadow mgn-bottom counter" style="">
-	<div class="row">
-		<div class="col-md-6 ctr-left" style="">
-			<h2 style="">> <div class="num num1" style="">170000</div></h2>
-			<h4 style="";>слушателей обучилось на наших МООК</h4>
-		</div>
-	
-		<div class="col-md-6 ctr-right" style="">
-			<h2 style="">> <div class="num num2" style="">4500</div></h2>
-			<h4 style="">сертификатов выдано слушателям</h4>
-		</div>
-	</div>
-</div>
-	
-<script>
-	jQuery(document).ready(function($) {
-		var func = function(){
-			const counterUp = window.counterUp.default
-			const num1 = document.querySelector('.num1')
-			const num2 = document.querySelector('.num2')
-
-			counterUp( num1, {
-				duration: 1000,
-				delay: 10,
-			})
-			counterUp( num2, {
-				duration: 1000,
-				delay: 10,
-			})
-		}
-		
-        func();
-        setInterval(function(){
-			func();
-		}, 8000);
-	});
-</script>
-	 
-<div class="white-with-shadow">
-	<div class="ssau_index_3"></div>
-	<div style="width:100%;">
-		<p style="width: 90%; margin: auto; margin-top: 20px; margin-bottom: 20px;">Открытые онлайн курсы Самарского университета - доступный и гибкий способ получения новых навыков и помощь в организации качественного образовательного процесса</p>
-	</div>
-</div>
-	 
-<div class="ssau_courses" style="padding:0;">ОНЛАЙН-КУРСЫ</div>
-	 
-<section class="home" style="padding:0;">
-	<%include file="${courses_list}" />
-</section>
-
-<%block name="js_extra">
-   <script type="text/javascript">
-      $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-   </script>
+% if course_discovery_enabled:
+<%block name="header_extras">
+  % for template_name in ["course_card", "filter_bar", "filter", "facet", "facet_option"]:
+  <script type="text/template" id="${template_name}-tpl">
+      <%static:include path="discovery/${template_name}.underscore" />
+  </script>
+  % endfor
+  <%static:require_module module_name="js/discovery/discovery_factory" class_name="DiscoveryFactory">
+    DiscoveryFactory(
+      ${course_discovery_meanings | n, dump_js_escaped_json},
+      getParameterByName('search_query'),
+      "${user_language | n, js_escaped_string}",
+      "${user_timezone | n, js_escaped_string}"
+    );
+  </%static:require_module>
 </%block>
+% endif
+
+<%block name="pagetitle">${_("Courses")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="find-courses">
+      <section class="courses-container">
+        % if course_discovery_enabled:
+        <div id="discovery-form" role="search" aria-label="course" class="wrapper-search-context">
+          <div id="discovery-message" class="search-status-label"></div>
+
+        </div>
+
+        <div id="filter-bar" class="filters hide-phone is-collapsed">
+        </div>
+        % endif
+
+        <div class="courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('List of Courses')}">
+          <ul class="courses-listing courses-list">
+            %for course in courses:
+            <li class="courses-listing-item">
+              <%include file="../course.html" args="course=course" />
+            </li>
+            %endfor
+          </ul>
+        </div>
+
+
+        % if course_discovery_enabled:
+        <aside aria-label="${_('Refine Your Search')}" class="search-facets phone-menu">
+          <h2 class="header-search-facets">${_('Refine Your Search')}</h2>
+          <section class="search-facets-lists">
+          </section>
+        </aside>
+        % endif
+
+      </section>
+    </section>
+</main>
