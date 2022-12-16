@@ -31,6 +31,10 @@
 
 <%block name="pagetitle">${_("Courses")}</%block>
 
+<link href="${static.url('css/courses.css')}" rel="stylesheet" type="text/css" />
+<link href="${static.url('css/index.css')}" rel="stylesheet" type="text/css" />
+<link href="${static.url('css/course.css')}" rel="stylesheet" type="text/css" />
+
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="find-courses">
       <section class="courses-container">
@@ -60,7 +64,7 @@
           <ul class="courses-listing courses-list">
             %for course in courses:
             <li class="courses-listing-item">
-              <%include file="../course.html" args="course=course" />
+              <%include file="course.html" args="course=course" />
             </li>
             %endfor
           </ul>
