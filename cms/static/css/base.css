@@ -6,6 +6,10 @@
     margin: 0 auto !important;
 }
 
+.form-create input {
+    height: auto !important;
+}
+
 #settings_advanced > section > ul > li > div.field.text.value > div > div.CodeMirror-scroll {
     height: auto !important;
 }
